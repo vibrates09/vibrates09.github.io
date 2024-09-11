@@ -453,7 +453,7 @@
             Based on Philippines currently working at Machinio.
           </p>
           <p>
-            I have over 4 years experience in UI development, actively
+            I have over <span id="year"></span> years experience in UI development, actively
             broadening my skills by learning more about backend development.
           </p>
         </h3>
@@ -551,6 +551,14 @@
     gtag('js', new Date());
 
     gtag('config', 'G-9MMVBMGZ7D');
+  </script>
+
+  <script>
+    const yearStarted = 2019;
+    const currentYear = new Date().getFullYear();
+    const experienceYears = currentYear - yearStarted;
+
+    document.getElementById('year').textContent = experienceYears;
   </script>
 </body>
 
