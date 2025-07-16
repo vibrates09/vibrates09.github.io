@@ -450,10 +450,10 @@
         </h2>
         <h3 class="font-source lg:text-2xl text-xl max-w-[600px]">
           <p>
-            Based on Philippines currently working at Machinio.
+            Based in the Philippines and currently working at Machinio.
           </p>
           <p>
-            I have over <span id="year"></span> years experience in UI development, actively
+            I have over <span id="year"></span> years of experience in UI development, actively
             broadening my skills by learning more about backend development.
           </p>
         </h3>
@@ -530,7 +530,7 @@
   </div>
 
   <div id="footer" class="mt-20 flex md:flex-row flex-col gap-x-2">
-    <div>
+    <div id="current-year">
       © 2024
     </div>
     <div class="md:block hidden">•</div>
@@ -558,6 +558,7 @@
     const currentYear = new Date().getFullYear();
     const experienceYears = currentYear - yearStarted;
 
+    document.getElementById('current-year').textContent = currentYear;
     document.getElementById('year').textContent = experienceYears;
   </script>
 </body>
